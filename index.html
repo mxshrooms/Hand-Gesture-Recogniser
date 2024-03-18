@@ -1,0 +1,39 @@
+<html>
+    <head>
+    <title>Hand Gesture Recogniser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+        <h1 id="heading">Hand Gesture Recogniser</h1>
+        <h3 id="subheading">Welcome to our tiny corner of the web! Our site is trained to identify the following hand gestures:</h3>
+        <p>Peace</p>
+        <p>Hang Loose</p>
+        <p>Rock N'Roll</p>
+        <br>
+        <label id="label1">Webcam:</label>
+        <div id="camera">
+
+        </div>
+        <button id="button1" onclick="takepic()">Snap</button>
+        <br>
+        <br>
+        <br>
+        <div id="result">
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <button id="button2" onclick="identify()">Identify</button>
+        <p style="font-size: 22px;">Object: <span id="object"></span></p>
+        <p style="font-size: 22px;">Accuracy: <span id="confidence"></span></p>
+        <script src="main.js"></script>
+        </center>
+    </body>
+</html>
